@@ -10,5 +10,18 @@
 	$age_visitor = 17;
 	echo 'Le visiteur a ' . $age_visitor .  ' ans';
 ?>
+<div>
+	<?php
+	if ($age_visitor <= 12) {
+		echo "Vous pouvez rentrez Gamin !";
+		$autorisation_enter = "Oui";
+	}
+	else {
+	 echo "Tu es trop vieux pour rentrer mon gars...";
+	 $autorisation_enter = "NON !";
+	}
+	echo "Pouvez vous entrer ? La réponse : <br />$autorisation_enter";
+	?>
+</div>
 </body>
 </html>
