@@ -6,6 +6,9 @@
 </head>
 <body>
 <p>Aujourdhui nous les sommmes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
-<p><?php echo '<strong>Bonjour !</strong>' ?></p>
+	<?php
+	$age_visitor = 17;
+	echo 'Le visiteur a ' . $age_visitor .  ' ans';
+?>
 </body>
 </html>
