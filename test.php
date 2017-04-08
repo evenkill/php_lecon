@@ -44,13 +44,34 @@
 		echo $minuscule,
 		'<br /> La phrase du dessus est maintenant en majucules !';
 
-		$jour = date('d');
-		$mois = date('m');
-		$annee = date ('Y');
+		// NE FONCTIONNE PAS !	
+		// $jour = date('d');
+		// $mois = date('m');
+		// $annee = date ('Y');
 
-		echo 'Aujourhui nous sommes le : ' . $jour . '/' . $mois '/' . $annee;
-		// Ne fonctionne pas...		
+		// echo 'Aujourhui nous sommes le : ' . $jour . '/' . $mois '/' . $annee;
+			
 		?>
+</div>
+<br /><h2>Fonction</h2>
+<div>
+	<! Fonction -->
+	<?php
+	function DireBonjour ($nom) {
+		echo 'Bonjour ' . $nom . ' !<br/ >';
+	}
+
+	DireBonjour ('Georges');
+	
+	function Calcul_volume ($rayon, $hauteur) {
+		$volume = $rayon * $rayon * 3.14 * $hauteur * (1/3);
+		return $volume;
+	}
+
+	$volume = Calcul_volume (3,5);
+	echo ' Le volume d\' un cone de rayon 3 et hauteur 5 est de : ' . $volume . ' cm<sup>3</sup>';
+
+	?>
 </div>
 
 </body>
