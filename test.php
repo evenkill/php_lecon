@@ -61,7 +61,7 @@
 		echo 'Bonjour ' . $nom . ' !<br/ >';
 	}
 
-	DireBonjour ('Georges');
+	DireBonjour ('Julien le bg');
 	
 	function Calcul_volume ($rayon, $hauteur) {
 		$volume = $rayon * $rayon * 3.14 * $hauteur * (1/3);
