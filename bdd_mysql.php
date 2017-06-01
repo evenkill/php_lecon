@@ -31,5 +31,19 @@ while ($donnees = $reponse->fetch())
 <?php
 }
 
-$reponse->cloreCursor();   // Termine le traitement de la requête
+$reponse->cloreCursor();   // Termine le traitement de la requête 
+?>
+
+
+<?php // Test avec deux entrées valider !
+$reponse = $bdd->query('SELECT nom, prix FROM jeux_video');
+
+while ($donnees = $reponse->fetch())
+
+{
+
+	echo 'Voici les prix du jeux ' . $donnees['nom'] .' : ' . $donnees['prix'] . ' euros !<br />';
+}
+
+$reponse->closeCursor();
 ?>
