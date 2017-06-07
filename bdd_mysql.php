@@ -31,7 +31,7 @@ while ($donnees = $reponse->fetch())
 <?php
 }
 
-$reponse->cloreCursor();   // Termine le traitement de la requête 
+ 
 ?>
 
 
